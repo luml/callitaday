@@ -9,4 +9,4 @@ const daysArr = [
   "Saturday"
 ];
 
-document.querySelector(".today ~ code").innerHTML = daysArr[aDay.getDay()];
+document.querySelector("code").innerHTML = daysArr[aDay.getDay()];

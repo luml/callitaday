@@ -18,8 +18,12 @@ body {
     color: aquamarine;
 }
 code {
+    background: black;
+    justify-content: space-around;
+    display: flex;
+    width: 20%;
+    margin-left: 38%;
     padding: 10px;
-    margin: 200px 0 0 -200px;
     border: 5px beige solid;
     border-radius: 3px;
     box-shadow: 10px 5px 5px beige;
