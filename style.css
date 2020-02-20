@@ -28,17 +28,15 @@ code {
     border-radius: 3px;
     box-shadow: 10px 5px 5px beige;
 }
-code ~ p {
+code ~ p, h2 {
     display: flex;
     justify-content: center;
-    color: wheat;
     font-style: italic;
+    color: wheat;
+}
+code ~ p {
     margin: 2rem;
 }
 code ~ h2 {
-    display: flex;
-    justify-content: center;
-    color: wheat;
     margin: -1rem;
-    font-style: italic;
 }
