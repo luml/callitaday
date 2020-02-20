@@ -41,3 +41,7 @@ code ~ p {
 code ~ h2 {
     margin: -1rem;
 }
+code.hours {
+    font-family: cursive;
+    font-size: 16px;
+}
