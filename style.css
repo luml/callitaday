@@ -21,8 +21,9 @@ code {
     background: black;
     justify-content: space-around;
     display: flex;
-    width: 20%;
+    width: 20vw;
     margin-left: 38%;
+    margin-bottom: 1rem;
     padding: 10px;
     border: 5px beige solid;
     border-radius: 3px;
