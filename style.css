@@ -39,10 +39,10 @@ code.hours {
     margin-left: 0;
     grid-column-start: 1;
     grid-column-end: 2;
-    border-radius: 18px;
-    background: #375719;
-    box-shadow: inset 10px 10px 26px #22350f, 
-                inset -10px -10px 26px #4c7923;
+    border-radius: 22px;
+    background: #3b5d1b;
+    box-shadow:  -12px -12px 24px #25516b, 
+             12px 12px 24px #528225;
     border: 0;
 }
 code.month {
@@ -50,8 +50,8 @@ code.month {
     grid-column-end: 3;
     border-radius: 18px;
     background: linear-gradient(145deg, #3b5d1b, #324e17);
-    box-shadow:  24px 24px 48px #1c2c0d, 
-             -24px -24px 48px #528225;
+    box-shadow:  12px 12px 24px #25516b, 
+             12px 12px 24px #528225;
     border: 0;
 }
 code ~ p, h2 {
