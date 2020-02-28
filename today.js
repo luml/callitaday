@@ -32,7 +32,6 @@ document.querySelector("code.month").innerHTML = "We're in month " + M;
 
 // mins
 const Mins = list[1]
-debugger
 document.querySelector("code.mins").innerHTML = Mins
 
 

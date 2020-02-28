@@ -40,11 +40,11 @@ code {
     grid-template-columns: repeat(5, 1fr);
 }
 
-
 .hours, .month, .mins {
     margin-left: 0;
     border-radius: 18px;
     border: 0;
+    font-family: 'Kaushan Script', cursive;
 }
 
 code.hours {
