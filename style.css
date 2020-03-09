@@ -80,3 +80,7 @@ code ~ p {
 code ~ h2 {
     margin: -1rem;
 }
+
+img {
+    filter: grayscale(10%);
+}
