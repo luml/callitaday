@@ -18,24 +18,28 @@ body {
     display: flex;
     justify-content: center;
 }
-.today, code {
+p.today {
+    font-weight: bold;
     font-size: xx-large;
-    color: aquamarine;
+    color: rgba(0, 255, 150 ,1);
 }
 code {
     background: black;
     justify-content: space-around;
     display: flex;
     width: 20vw;
-    margin-left: 38%;
+    margin-left: calc(40% - 1rem);
     margin-bottom: 1rem;
     padding: 10px;
     border: 5px beige solid;
     border-radius: 3px;
     box-shadow: 10px 5px 5px beige;
+    font-size: x-large;
+    color: aquamarine;
 }
 
 .hour-month {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
