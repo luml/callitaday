@@ -12,26 +12,32 @@ const daysArr = [
 
 // morining or afternoon
 document.querySelector("code").innerHTML = daysArr[aDay.getDay()];
-const list = aDay.toLocaleString().split(' ')
-const T = list[list.length - 1];
+const [a,b,...c] = aDay.toLocaleString().split(' ');
 
-switch(T) {
+switch(c[0]) {
   case "AM":
     document.querySelector("code.hours").innerHTML = "Good Morining"
     break
   case "PM":
-    document.querySelector("code.hours").innerHTML = "Good Afteroon"
+    const d = b.split(":")[0];
+    switch(d > 7){
+      case true:
+        document.querySelector("code.hours").innerHTML = "Good Evening"
+        break;
+      default:
+        document.querySelector("code.hours").innerHTML = "Good Afteroon"
+    }
     break
   default:
     document.querySelector("code.hours").innerHTML = "Good Day"
 }
  
 // which month
-const M = list[0].split("/")[0];
+const M = a.split("/")[0];
 document.querySelector("code.month").innerHTML = "We're in month " + M;
 
 // mins
-const Mins = list[1]
+const Mins = b
 document.querySelector("code.mins").innerHTML = Mins
 
 
