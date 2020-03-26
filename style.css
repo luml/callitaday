@@ -1,10 +1,6 @@
-/* var blue(#25516b);
-var teal(#25516b);
-var green(#528225); */
-
-
 body {
-    background: rgb(37, 9, 9);
+    --bg-color: rgb(37, 9, 9);
+    background: var(--bg-color);
 }
 
 .picture {
