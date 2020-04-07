@@ -4,15 +4,23 @@ body {
 }
 
 .picture {
-    display: flex;
-    justify-content: center;
+    /* 01: flexbox */
+    /* display: flex;
+    justify-content: center; */
+    /* 02 grid */
+    display: grid;
+    place-items: center;
 }
 .picture img {
     margin: 1em;
 }
 .word {
-    display: flex;
-    justify-content: center;
+    /* 01: flexbox */
+    /* display: flex;
+    justify-content: center; */
+    /* 02 grid */
+    display: grid;
+    place-items: center;
 }
 p.today {
     font-weight: bold;
