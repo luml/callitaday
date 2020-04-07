@@ -1,8 +1,8 @@
 let aDay = new Date();
-// Which day
+// Which day, apply array.flat()
 const daysArr = [
-  "Sunday",
-  "Monday",
+  ["Sunday",
+  "Monday",],
   "Tuesday",
   "Wednesday",
   "Thursday",
@@ -10,8 +10,8 @@ const daysArr = [
   "Saturday"
 ];
 
-// morining or afternoon
-document.querySelector("code").innerHTML = daysArr[aDay.getDay()];
+// morining or afternoon, Infinity is flat() parameter depth
+document.querySelector("code").innerHTML = daysArr.flat(Infinity)[aDay.getDay()];
 const [a,b,...c] = aDay.toLocaleString().split(' ');
 
 switch(c[0]) {
