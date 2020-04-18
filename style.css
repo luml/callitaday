@@ -1,6 +1,8 @@
 body {
     --bg-color: rgb(37, 9, 9);
-    background: var(--bg-color);
+    --bg-color-1: rgb(75, 27, 78);
+    background: linear-gradient(var(--bg-color), var(--bg-color-1));
+    height: 100vh;
 }
 
 .picture {
