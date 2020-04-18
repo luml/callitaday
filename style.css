@@ -13,9 +13,12 @@ body {
     display: grid;
     place-items: center;
 }
-.picture img {
-    margin: 1em;
+.picture > div {
+    height: 25vh;
+    width: 60vw;
+    background: linear-gradient(135deg, orange, pink 60%, cyan);
 }
+
 .word {
     /* 01: flexbox */
     /* display: flex;
