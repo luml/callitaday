@@ -29,6 +29,7 @@ body {
     width: 60vw;
     background: linear-gradient(135deg, orange, pink 60%, cyan);
     animation: shining 2s infinite alternate-reverse;
+    transition: all 2s ease-in-out;
 }
 
 .word {

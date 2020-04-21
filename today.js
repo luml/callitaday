@@ -42,7 +42,8 @@ document.querySelector("code.mins").innerHTML = Mins
 
 // TODO smoothly replace the body.style.background
 document.querySelector(".picture>div").addEventListener('click', function () {
-  document.body.style.background = `linear-gradient(135deg, orange, cyan 60%, pink)`
+  // document.body.style.background = `linear-gradient(135deg, orange, cyan 60%, pink)`
+  this.style.transform = `scaleX(1.5) scaleY(1.2)`
 })
 
 
