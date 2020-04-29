@@ -1,40 +1,51 @@
-let aDay = new Date();
-// Which day, apply array.flat()
-const daysArr = [
-  ["Sunday",
-  "Monday",],
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
+class timeFormating {
+  constructor() {
+    this.days = [
+      ["Sunday",
+      "Monday",],
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ]
+    this.day = new Date()
+  }
+
+  getAday() {
+    return this.days.flat(Infinity)[this.day.getDay()]
+  }
+}
+
 
 // morining or afternoon, Infinity is flat() parameter depth
-document.querySelector("code").innerHTML = daysArr.flat(Infinity)[aDay.getDay()];
-const [a,b,...c] = aDay.toLocaleString().split(' ');
+const tooday = new timeFormating()
+const today = tooday.getAday()
+document.querySelector("code").innerHTML = today
+const [a,b,...c] = tooday.day.toLocaleString().split(' ')
 
+const hourDom = document.querySelector("code.hours")
 switch(c[0]) {
   case "AM":
-    document.querySelector("code.hours").innerHTML = "Good Morining"
+    hourDom.innerHTML = `Good Morining`
     break
   case "PM":
     const d = b.split(":")[0];
     switch(d > 7){
       case true:
-        document.querySelector("code.hours").innerHTML = "Good Evening"
+        hourDom.innerHTML = `Good Evening`
         break;
       default:
-        document.querySelector("code.hours").innerHTML = "Good Afteroon"
+        hourDom.innerHTML = `Good Afternoon`
     }
     break
   default:
-    document.querySelector("code.hours").innerHTML = "Good Day"
+    hourDom.innerHTML = `Good Day`
 }
  
 // which month
 const M = a.split("/")[0];
-document.querySelector("code.month").innerHTML = "We're in month " + M;
+document.querySelector("code.month").innerHTML = `We're in month ${M}`;
 
 // mins
 const Mins = b
@@ -44,5 +55,3 @@ document.querySelector("code.mins").innerHTML = Mins
 document.querySelector(".picture>div").addEventListener('click', function () {
   this.style.transform = `scaleX(1.2) scaleY(1.2)`
 })
-
-
