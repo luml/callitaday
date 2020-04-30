@@ -15,14 +15,16 @@ class timeFormating {
   getAday() {
     return this.days.flat(Infinity)[this.day.getDay()]
   }
+  getMonthHourMins() {
+    return this.day.toLocaleString().split(' ')
+  }
 }
-
 
 // morining or afternoon, Infinity is flat() parameter depth
 const tooday = new timeFormating()
 const today = tooday.getAday()
 document.querySelector("code").innerHTML = today
-const [a,b,...c] = tooday.day.toLocaleString().split(' ')
+const [a,b,...c] = tooday.getMonthHourMins()
 
 const hourDom = document.querySelector("code.hours")
 switch(c[0]) {
@@ -43,13 +45,11 @@ switch(c[0]) {
     hourDom.innerHTML = `Good Day`
 }
  
-// which month
-const M = a.split("/")[0];
-document.querySelector("code.month").innerHTML = `We're in month ${M}`;
+// month
+document.querySelector("code.month").innerHTML = `We're in month ${a.split("/")[0]}`;
 
 // mins
-const Mins = b
-document.querySelector("code.mins").innerHTML = Mins
+document.querySelector("code.mins").innerHTML = b
 
 // TODO smoothly replace the body.style.background
 document.querySelector(".picture>div").addEventListener('click', function () {
